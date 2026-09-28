@@ -22,7 +22,10 @@ http.createServer(async (req, res) => {
       res.writeHead(404).end('Não encontrado');
       return;
     }
-    const content = await readFile(path.join(root, relative));
+    let content = await readFile(path.join(root, relative));
+    if (relative === 'index.html') {
+      content = content.toString().replace('</head>', '<meta name="facebook-domain-verification" content="x9i8hv8g45z7jw0tlosqo5wjwsnhmx">\n</head>');
+    }
     res.writeHead(200, { 'Content-Type': types[path.extname(relative)] || 'application/octet-stream' });
     res.end(content);
   } catch {
