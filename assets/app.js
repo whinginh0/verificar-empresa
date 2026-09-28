@@ -1,3 +1,7 @@
+document.body.innerHTML = document.body.innerHTML
+  .replaceAll('[INSERIR WHATSAPP]', '(22) 92017-5919')
+  .replaceAll('[INSERIR TELEFONE]', '(22) 92017-5919');
+
 const modals = [...document.querySelectorAll('[id$="-modal"]')];
 let lastTrigger;
 
