@@ -1,0 +1,9 @@
+/* Ajustes de navegação, sem alterar o layout original. */
+section[id], article[id] { scroll-margin-top: 150px; }
+a:focus-visible { outline: 3px solid #2fb184; outline-offset: 4px; }
+@media (min-width: 640px) {
+  section[id], article[id] { scroll-margin-top: 95px; }
+}
+
+#dados small { display:block; color:var(--public-muted); font-size:.75rem; font-weight:800; text-transform:uppercase; letter-spacing:.04em; }
+#dados b { display:block; margin-top:.5rem; font-size:.875rem; line-height:1.35; }
