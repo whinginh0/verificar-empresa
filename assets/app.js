@@ -1,3 +1,8 @@
+const facebookVerification = document.createElement('meta');
+facebookVerification.name = 'facebook-domain-verification';
+facebookVerification.content = 'x9i8hv8g45z7jw0tlosqo5wjwsnhmx';
+document.head.appendChild(facebookVerification);
+
 document.body.innerHTML = document.body.innerHTML
   .replaceAll('[INSERIR WHATSAPP]', '(22) 92017-5919')
   .replaceAll('[INSERIR TELEFONE]', '(22) 92017-5919');
