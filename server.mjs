@@ -28,6 +28,6 @@ http.createServer(async (req, res) => {
   } catch {
     res.writeHead(404).end('Não encontrado');
   }
-}).listen(port, '127.0.0.1', () => {
+}).listen(port, '0.0.0.0', () => {
   console.log(`Site disponível em http://localhost:${port}`);
 });
